@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.wrap{
+		position: relative;
+		margin: 130px auto;
+		background-color: pink;
+		width: 300px;
+	}
+ 
+	.mail-wrap, .pw-wrap{
+		position: relative;
+		margin: 0 auto;
+		width: 200px;
+		height: 21px;
+	}
+	
+	.pw-wrap{
+		background-color: blue;
+	}
+	
+	.mail-wrap{
+		background-color: green;
+	}
+	
+	.mail-content, .pw-content{
+		position: absolute;
+		left: 14px;
+	}
+	
+	.pw-img{
+		position: absolute;
+		width: 26px;
+    	right: 12px;
+    	top: -2px;
+	}
+	
+	.mail-Tit{
+	    position: absolute;
+	    right: 17px;
+	    top: 1px;
+	    font-size: 12px;
+	}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="pw-wrap">	
+			<input class="pw-content" type="password" placeholder="비밀번호" maxlength="10">
+			<img class="pw-img" src="lock.png">
+		</div>
+		<div class="mail-wrap">
+			<input class="mail-content" type="text" placeholder="이메일" maxlength="10">
+			<span class="mail-Tit">@mail.com</span>
+		</div>
+	</div>
+</body>
+</html>
