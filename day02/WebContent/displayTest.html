@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃</title>
+<style>
+	
+	body{
+		background: #f3f7fa;
+		color: #808080;
+	}
+	
+	div.flex-container{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	div#wrap {
+		display: table;
+		border-spacing: 10px;
+		margin: 0 auto;
+	}
+		
+	div.row{
+		display: table-row;
+	}
+	
+	div.col{
+		display: table-cell;
+		background: white;
+		width: 230px;
+		height: 300px;
+		border-spacing: 10px;
+	}
+	
+	img{
+		width: 90px;
+		height: 90px;
+	}
+	
+	div.img{
+		text-align: center;
+		margin-bottom: 22px;
+		padding-top: 45px;
+	}
+	
+	div.title{
+		text-align: center;
+	}
+	
+	p.content {
+		font-size: 12px;
+	}
+	
+	p.number {
+		text-align: center;
+		font-size: 26px;
+	}
+	
+	p.new-item-number{
+		color: #ff6b00
+	}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="row">
+			<div class="col">
+				<div class="img">
+					<img src="https://www.sta1.com/_nuxt/img/icon-myshop@3x.00de977.png">
+				</div>
+				<div class="title">
+					<sapn>MY</sapn>
+					<strong>SHOP</strong>
+				</div>
+				<div class="flex-container">
+					<div>
+						<p class="content shop">SHOP</p>
+						<p class="number shop-number">0</p>
+					</div>
+					<div>
+						<p class="content newItem">NEW ITEM</p>
+						<p class="number new-item-number">0</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="img">
+					<img src="https://www.sta1.com/_nuxt/img/icon-myshop@3x.00de977.png">
+				</div>
+				<div class="title">
+					<h2 class="title"></h2>
+				</div>
+					<sapn>20대,30대</sapn>
+					<strong>러블리,럭셔리명품</strong>
+				<div class="flex-container">
+					<div>
+						<p class="content shop">SHOP</p>
+						<p class="number shop-number">0</p>
+					</div>
+					<div>
+						<p class="content newItem">NEW ITEM</p>
+						<p class="number new-item-number">0</p>
+					</div>
+				</div>
+			</div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+		</div>
+		<div class="row">
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+		</div>
+	</div>	
+</body>
+</html>
